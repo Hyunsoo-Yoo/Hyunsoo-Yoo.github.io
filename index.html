@@ -178,9 +178,17 @@
 							<h2>같이 매출을 올려봅시다.</h2>
 							<p>관심 있는 누구나 아래에 이메일을 남겨주세요.</p>
 						</header>
-						<form method="post" action="#" class="cta">
+						<form method="post" action="https://formspree.io/f/movengdv" class="cta">
 							<div class="row gtr-uniform gtr-50">
-								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
+								<!-- 이름 -->
+								<div class="col-6 col-12-xsmall"><input type="text" name="name" placeholder="이름" required /></div>
+								<!-- 소속 -->
+								<div class="col-6 col-12-xsmall"><input type="text" name="company" placeholder="소속" required /></div>
+								<!-- 직책 -->
+								<div class="col-6 col-12-xsmall"><input type="text" name="position" placeholder="직책" required /></div>
+								<!-- 이메일 -->
+								<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="이메일 주소" required /></div>
+								<!-- 버튼 -->
 								<div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary" /></div>
 							</div>
 						</form>
