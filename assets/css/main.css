@@ -3125,7 +3125,7 @@ input, select, textarea {
 			height: 101%;
 			padding: 6em 3em;
 			top: 0;
-			width: 28em;
+			width: 40em;
 		}
 
 		.spotlight.left .content {
@@ -3134,7 +3134,7 @@ input, select, textarea {
 		}
 
 		.spotlight.right .content {
-			border-left-width: 0.5em;
+			border-left-width: 0.35em;
 			right: 0;
 		}
 
