@@ -226,6 +226,7 @@ input, select, textarea {
 
 	h2 {
 		font-size: 1.5rem;
+		letter-spacing: 0.1em;
 		font-weight: 400;
 		margin: 0 0 2rem 0;
 	}
@@ -261,7 +262,6 @@ input, select, textarea {
 
 		h3 {
 			font-size: 1rem;
-			letter-spacing: 0.09em;
 		}
 
 		h4 {
