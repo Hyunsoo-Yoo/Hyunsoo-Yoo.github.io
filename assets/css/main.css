@@ -266,16 +266,6 @@ body, input, select, textarea {
   /* margin-bottom: 5rem; */
 }
 
-.demo-section{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;         /* 수평 중앙 */
-  justify-content: flex-start; /* 수직 상단 */
-  text-align: center;
-  padding: 2rem;
-  box-sizing: border-box;
-}
 
 .solution-section {
   height: 150vh;
@@ -289,7 +279,7 @@ body, input, select, textarea {
 }
 
 @media screen and (max-width: 768px) {
-  .solution-section, .demo-section {
+  .solution-section {
     margin-bottom: 6rem; /* ✅ 모바일에선 여백 더 넉넉히 */
   }
 }
