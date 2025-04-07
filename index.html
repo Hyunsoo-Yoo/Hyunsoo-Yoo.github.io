@@ -25,7 +25,6 @@
 
 		<!-- 첫번째 페이지 -->
 		<section class="section" id="home">
-			<!-- 첫번째 페이지 -->
 			<div class = "inner">
 					<h1>당신의 검색 엔진은 멀쩡해요.<br/> 태그가 문제죠.</h1>
 					<h3>
@@ -36,18 +35,8 @@
 
 			</div>
 		</section>
+
 		<!-- 두번째 페이지 -->
-		<!--
-		<section class="section" id="customer">
-			<div class="inner">
-				<h2>
-					이 제품, 진짜 '니트', '반팔티'일까요?
-				</h2>
-				<img src="images/Before.jpg" alt="" />
-				<p>제품명: 응응응</p>
-			</div>
-		</section>
-		-->
 		<section class="solution-section" id="solution">
 			<h1>
 				잘못된 태그를 <span class="change-line">한 번에 고쳐보세요.</span>
@@ -74,12 +63,41 @@
 						<span class="bad-tag">투톤자켓,</span>
 						<span>페이크레더</span>
 					</h3>
-					<button onclick="cleanTags()">태그 정제하기</button>
+					<button onclick="cleanTags()" style="margin-right: 1rem;">태그 정제하기</button>
 					<button onclick="restoreTags()">되돌리기</button>
 				</div>
 			</div>
 		</section>
 
+		<!-- 세번째 페이지 -->
+		<section class="solution-section">
+			<div class="inner">
+				<h1>AI로 태그를 분석하고, <span class="change-line">정리합니다.</span></h1>
+				<p>
+				판매자들이 임의로 입력한 태그,
+				<span class="change-line">‘자켓’인지 ‘바지’인지 알 수 없던</span><span class="change-line"> 검색 결과를 보셨나요?</span>
+				<span class="change-line">이제 Aigen이 그 문제를 해결합니다.</span>
+				</p>
+
+				<div class="feature-grid">
+				  <div class="feature-block">
+					<img src="images/icons.png" />
+					<h3>잘못된 태그 자동 감지</h3>
+					<p>AI가 의미 없는, 중복된, 잘못된 태그를 감지해 자동으로 제거합니다.</p>
+				  </div>
+				  <div class="feature-block">
+					<img src="images/icons2.png" />
+					<h3>유사 태그 정규화</h3>
+					<p>‘청바지’, ‘데님’을 하나의 의미로 통일하여 검색의 정확도를 높입니다.</p>
+				  </div>
+				  <div class="feature-block">
+					<img src="images/icons3.png" />
+					<h3>검색 전환율 향상</h3>
+					<p>고객이 원하는 상품을 빠르게 찾고, 전환율이 올라갑니다.</p>
+				  </div>
+				</div>
+			</div>
+		</section>
 
 		<!-- 콜투액션 페이지 -->
 		<section class="cta-section" id="contact">
@@ -88,7 +106,7 @@
 					지금, 당신의 시스템에 <span class="change-line">직접 적용해보세요.</span>
 				</h2>
 				<!-- <p>📞 1:1 미팅 신청</p> -->
-				<p>지금이 기회입니다.<br>단 2개 기업에 한해 무료 도입, <span class="change-line">이후부터 소정의 계약금 발생,</span><br>효과가 없다면 <strong>전액 환불 보장</strong></p>
+				<p>지금이 기회입니다.<br>단 2개 기업에 한해 <strong>무료 도입</strong>, <span class="change-line">이후부터 소정의 계약금 발생,</span><br>효과가 없다면 <strong>전액 환불 보장</strong></p>
 				<form method="post" action="https://formspree.io/f/movengdv" class="cta-form">
 			  		<div class="form-row">
 						<input type="text" placeholder="이름 *" required />
@@ -127,7 +145,7 @@
 		  </div>
 
 		  <div class="footer-right">
-			<a href="www.linkedin.com/in/LeohyunYoo" target="_blank" class="social-icon">
+			<a href="https://www.linkedin.com/in/LeohyunYoo" target="_blank" class="social-icon">
 			  <i class="fab fa-linkedin"></i>
 			</a>
 		  </div>
