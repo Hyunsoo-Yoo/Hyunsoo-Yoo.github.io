@@ -331,6 +331,11 @@ body, input, select, textarea {
   padding: 2rem;
   box-sizing: border-box;
 }
+@media screen and (max-width: 768px) {
+  .solution-section {
+    margin-bottom: 6rem; /* ✅ 모바일에선 여백 더 넉넉히 */
+  }
+}
 
 .bad-tag {
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -385,7 +390,7 @@ body, input, select, textarea {
 
 @media screen and (max-width: 480px) {
     .cta-box h2{
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
     .cta-box p{
       font-size: 0.7rem;
@@ -404,8 +409,6 @@ body, input, select, textarea {
   flex-wrap: wrap;
 }
 
-
-
 .form-row input {
   flex: 1 1 45%;
   padding: 1rem;
@@ -421,7 +424,7 @@ body, input, select, textarea {
       flex-direction: column;
     }
     .form-row input{
-      font-size: 0.9rem;
+      font-size: 0.7rem;
     }
 }
 .cta-form button {
@@ -433,6 +436,10 @@ body, input, select, textarea {
   font-size: 1.1rem;
   margin-top: 1rem;
   transition: 0.3s;
+}
+
+@media screen and (max-width:768px){
+  font-size: 0.7rem;
 }
 
 .cta-form button:hover {
@@ -558,10 +565,17 @@ body, input, select, textarea {
   color: #000000;            /* ✅ 검정 글씨로 명확하게 */
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
-  font-weight: 600;
+  font-weight: 500;
+  font-size:1.1rem;
   text-decoration: none;
   text-align: center;
   transition: background-color 0.2s ease;
+}
+
+@media screen and (max-width: 768px){
+  .kakao-btn{
+    font-size: 0.7rem;
+  }
 }
 
 .kakao-btn:hover {
@@ -605,6 +619,12 @@ body, input, select, textarea {
   max-width: 350px;
   height: auto;
   border-radius: 8px;
+}
+
+@media screen and (max-width: 768px){
+  .tag-image img{
+    max-width: 300px;
+  }
 }
 
 .tag-text {
@@ -1020,6 +1040,16 @@ textarea {
     background-color: rgba(255, 255, 255, 0.125);
     border-color: #1cb495; }
 
+
+@media screen and (max-width:768px){
+  input[type="text"]{
+    padding: 1em 1em;
+  }
+
+  input[type='email']{
+    padding: 1em 1em;
+  }
+}
 select {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.35)' /%3E%3C/svg%3E");
   background-size: 1.25rem;
