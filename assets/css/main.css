@@ -509,7 +509,7 @@ body, input, select, textarea {
   color: #fff;
 }
 
-#home, #customer, #solution, #contact{
+#home, #demo, #solution, #contact{
   scroll-margin-top: 128px;
 }
 
@@ -603,10 +603,12 @@ body, input, select, textarea {
 .feature-block {
   flex: 1 1 265px;
   max-width: 350px;
+  width: 350px;
   background: linear-gradient(#1a1a1a, #1a1a1a) padding-box,
               linear-gradient(90deg, #28b5c8, #1cb495) border-box;
   border: 2px solid transparent;
   border-radius: 12px;
+  height: 265px;
   padding: 2rem;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -642,6 +644,7 @@ body, input, select, textarea {
 
   .feature-block {
     max-width: 90%;
+    min-height: 250px;
   }
 
   .feature-block h3{
