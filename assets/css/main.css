@@ -314,7 +314,7 @@ body, input, select, textarea {
 .section {
   height: 100vh;
   display: flex;
-  align-items: center;  /* 수직 중앙 */
+  align-items: flex-start;  /* 수직 상단 */
   justify-content: center;  /* 수평 중앙 */
   text-align: center;
   padding: 2rem;
@@ -329,7 +329,7 @@ body, input, select, textarea {
 .cta-section {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 5rem 1.5rem;
   min-height: 100vh;
 }
@@ -357,6 +357,7 @@ body, input, select, textarea {
 }
 
 .cta-box p {
+  font-size: 1.2rem;
   color: #ccc;
   margin-bottom: 2rem;
 }
@@ -366,7 +367,7 @@ body, input, select, textarea {
       font-size: 1.3rem;
     }
     .cta-box p{
-      font-size: 1.2rem;
+      font-size: 0.7rem;
     }
 }
 
@@ -524,6 +525,31 @@ body, input, select, textarea {
   font-weight: 700;
   color: #fff;
 }
+
+#home, #customer, #solution, #contact{
+  scroll-margin-top: 128px;
+}
+
+.kakao-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #FEE500; /* 카카오톡 컬러 */
+  color: #000000;            /* ✅ 검정 글씨로 명확하게 */
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.kakao-btn:hover {
+  background-color: #ffeb3b; /* hover 시 살짝 더 밝게 */
+  color: #000;               /* hover 시에도 유지 */
+}
+
+
+
 a {
   -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
   -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
