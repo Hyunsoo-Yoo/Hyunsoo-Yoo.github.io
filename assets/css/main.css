@@ -601,7 +601,7 @@ body, input, select, textarea {
 }
 
 .feature-block {
-  flex: 1 1 300px;
+  flex: 1 1 265px;
   max-width: 350px;
   background: linear-gradient(#1a1a1a, #1a1a1a) padding-box,
               linear-gradient(90deg, #28b5c8, #1cb495) border-box;
@@ -690,11 +690,11 @@ h1 {
 
 h2 {
   font-size: 1.75em;
-  line-height: 1.5em; }
+  line-height: 2.0em; }
 
 h3 {
   font-size: 1em;
-  line-height: 1.5em; }
+  line-height: 2.0em; }
 
 h4 {
   font-size: 1.1em;
