@@ -281,6 +281,7 @@ body, input, select, textarea {
 @media screen and (max-width: 768px) {
   .solution-section {
     margin-bottom: 6rem; /* ✅ 모바일에선 여백 더 넉넉히 */
+    padding: 4rem 1rem;
   }
 }
 
@@ -305,6 +306,7 @@ body, input, select, textarea {
 .inner {
   max-width: none;
   width: 100%;
+  min-width: 400px;
   text-align: center;
 }
 .cta-section {
@@ -323,6 +325,7 @@ body, input, select, textarea {
   padding: 2.5rem;
   width: 100%;
   max-width: 900px;
+  min-width: 350px;
   color: white;
   box-sizing: border-box;
   text-align: center;
@@ -643,8 +646,10 @@ body, input, select, textarea {
   }
 
   .feature-block {
-    max-width: 90%;
+    width: 100%;
+    max-width: 400px;
     min-height: 250px;
+    margin: 0 auto;
   }
 
   .feature-block h3{
