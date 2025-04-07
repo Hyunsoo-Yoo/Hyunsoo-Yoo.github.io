@@ -321,10 +321,31 @@ body, input, select, textarea {
   box-sizing: border-box;
   /* margin-bottom: 5rem; */
 }
+.solution-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;         /* 수평 중앙 */
+  justify-content: flex-start; /* 수직 상단 */
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
 
+.bad-tag {
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.bad-tag.fade-out {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  pointer-events: none;
+}
 .inner {
-  max-width: 800px;
+  max-width: none;
   width: 100%;
+  text-align: center;
 }
 .cta-section {
   display: flex;
@@ -548,7 +569,50 @@ body, input, select, textarea {
   color: #000;               /* hover 시에도 유지 */
 }
 
+.section img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;         /* 컨테이너 기준 꽉 채움 */
+  max-width: 1200px;   /* 화면이 크면 더 커질 수 있음 */
+  height: auto;
+  object-fit: contain;
+}
 
+.tag-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem; /* 이미지-텍스트 사이 간격 */
+  flex-wrap: wrap; /* 모바일 대응 */
+  padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .tag-wrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1.5rem;          /* ✅ 좌우 여백 생김 */
+    box-sizing: border-box;     /* ✅ padding 포함한 폭 계산 */
+  }
+
+  .tag-text {
+    text-align: center;
+  }
+}
+
+.tag-image img {
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.tag-text {
+  max-width: 600px;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
 a {
   -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
