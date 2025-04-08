@@ -433,7 +433,8 @@ body, input, select, textarea {
   font-weight: 500;
   font-size: 1.5rem;
   letter-spacing: 1px;
-  text-decoration: none;
+  text-decoration: none !important;
+  border-bottom: none !important;
 }
 
 /* 메뉴 */
@@ -445,7 +446,8 @@ body, input, select, textarea {
 
 .navbar-right a {
   color: #fff;
-  text-decoration: none;
+  text-decoration: none !important;
+  border-bottom: none !important;
   font-weight: 300;
   transition: color 0.3s;
 }
@@ -487,7 +489,8 @@ body, input, select, textarea {
 /* 가운데 링크 */
 .footer-center a {
   color: #fff;
-  text-decoration: none;
+  text-decoration: none !important;
+  border-bottom: none !important;
   font-weight: 500;
   transition: color 0.3s;
 }
