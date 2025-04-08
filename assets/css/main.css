@@ -348,7 +348,7 @@ body, input, select, textarea {
 
 @media screen and (max-width: 480px) {
     .cta-box h2{
-      font-size: 1.1rem;
+      font-size: 1.4rem;
     }
     .cta-box p{
       font-size: 0.7rem;
@@ -532,7 +532,7 @@ body, input, select, textarea {
 
 @media screen and (max-width: 768px){
   .kakao-btn{
-    font-size: 0.7rem;
+    font-size: 1.0rem;
   }
 }
 
@@ -648,15 +648,15 @@ body, input, select, textarea {
   .feature-block {
     width: 100%;
     max-width: 400px;
-    min-height: 250px;
+    min-height: 280px;
     margin: 0 auto;
   }
 
   .feature-block h3{
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .feature-block p{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -720,17 +720,17 @@ h6 {
 @media screen and (max-width: 736px) {
 
 		h1 {
-			font-size: 1.2rem;
+			font-size: 1.6rem;
 			line-height: 1.5;
 		}
 
 		h2 {
-			font-size: 1rem;
+			font-size: 1.2rem;
 			line-height: 1.7;
 		}
 
 		h3 {
-			font-size: 0.7rem;
+			font-size: 1.0rem;
 		}
 
 		h4 {
