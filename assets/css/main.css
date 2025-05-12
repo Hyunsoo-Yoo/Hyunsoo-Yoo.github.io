@@ -558,7 +558,7 @@ body, input, select, textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem; /* 이미지-텍스트 사이 간격 */
+  gap: 15rem; /* 이미지-텍스트 사이 간격 */
   flex-wrap: wrap; /* 모바일 대응 */
   padding: 2rem;
 }
@@ -583,7 +583,18 @@ body, input, select, textarea {
 }
 
 .tag-image img {
-  max-width: 350px;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.tag-image-long img{
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+.tag-image-wide img{
+  max-width: 600px;
   height: auto;
   border-radius: 8px;
 }
@@ -591,6 +602,9 @@ body, input, select, textarea {
 @media screen and (max-width: 768px){
   .tag-image img{
     max-width: 300px;
+  }
+  .tag-image-long img{
+    max-width:300px;
   }
 }
 
@@ -661,6 +675,22 @@ body, input, select, textarea {
   .feature-block p{
     font-size: 0.9rem;
   }
+}
+
+.demo-section {
+  height: 100vh;
+  align-items: flex-start;  /* 수직 상단 */
+  justify-content: center;  /* 수평 중앙 */
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  /* margin-bottom: 5rem; */
+}
+
+.demo-video {
+  max-width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 a {

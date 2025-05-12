@@ -12,8 +12,8 @@
 
 		<!-- 🔽 썸네일 설정 (Open Graph 태그) -->
 		<meta property="og:title" content="Aigen - 태그 데이터 혁신 솔루션">
-		<meta property="og:description" content="AI로 검색 태그를 정제해 전환율을 높이세요.">
-		<meta property="og:image" content="http://www.aigen.ai.kr/images/thumbnail.png"> <!-- 이 부분 이미지 경로 바꿔줘 -->
+		<meta property="og:description" content="AI로 태그를 생성해 전환율을 높이세요.">
+		<meta property="og:image" content="http://www.aigen.ai.kr/images/thumbnail.png">
 		<meta property="og:url" content="http://www.aigen.ai.kr">
 		<meta property="og:type" content="website">
 	</head>
@@ -33,8 +33,8 @@
   			<div class="navbar-group">
     			<a href="#home" class="logo">Aigen</a>
 				<nav class="navbar-right">
-					<a href="#demo">Demo</a>
 					<a href="#solution">Solution</a>
+					<a href="#demo">Demo</a>
 					<a href="#contact">Contact</a>
 					<a href="#info">Info</a>
 				</nav>
@@ -44,85 +44,68 @@
 		<!-- 첫번째 페이지 -->
 		<section class="section" id="home">
 			<div class = "inner">
-					<h1>당신의 검색 엔진은 멀쩡해요.<br/> 태그가 문제죠.</h1>
+					<h1>상품 태깅을 AI로 정확하고, 빠르게</h1>
 					<h3>
-						잘못된 태그 하나가, <span class="change-line">하루 1,000명의 고객을 날립니다.</span>
+						개인화 상품 추천 성능은, <span class="change-line">정확한 태그에서부터 시작합니다.</span>
 					</h3>
 					<br>
-				<input type="button" value="Contact Us" onclick="location.href='#contact';"/>
+				<input type="button" value="데모 받기" onclick="location.href='#contact';"/>
 
 			</div>
 		</section>
 
-		<!-- 두번째 페이지 -->
-		<section class="solution-section" id="demo">
-			<h1>
-				잘못된 태그를 <span class="change-line">한 번에 고쳐보세요.</span>
-				<br><br>
-			</h1>
-			<div class="tag-wrapper">
-				<div class="tag-image">
-					<img src="images/Before.jpg" alt="제품 이미지" />
-				</div>
-				<div class="tag-text">
-					<h2>제품명 : 올드 레더 오버핏 가죽 자켓</h2>
-					<h3>
-						태그 :
-						<span>가을자켓,</span>
-						<span class="bad-tag">여름,</span>
-						<span>가죽자켓,</span>
-						<span class="bad-tag">패딩자켓,</span>
-						<span>블랙레더자켓,</span>
-						<span class="bad-tag">갈색레더자켓,</span>
-						<span>간절기자켓,</span>
-						<span class="bad-tag">가죽벨트,</span>
-						<span class="bad-tag">가죽바지,</span>
-						<span class="bad-tag">라이더팬츠,</span>
-						<span class="bad-tag">투톤자켓,</span>
-						<span>페이크레더</span>
-					</h3>
-					<button onclick="cleanTags()" style="margin-right: 1rem;">태그 정제하기</button>
-					<button onclick="restoreTags()">되돌리기</button>
-				</div>
-			</div>
-		</section>
-
-		<!-- 세번째 페이지 -->
+		<!-- 솔루션 페이지 1-->
 		<section class="solution-section" id="solution">
-				<h1>AI로 태그를 분석하고, <span class="change-line">정리합니다.</span></h1>
+				<h1>Aigen Tagger</h1>
 				<H3>
-				판매자들이 임의로 입력한 태그,
-				<span class="change-line">‘자켓’인지 ‘바지’인지 알 수 없던</span>
-				<span class="change-line"> 검색 결과를 보셨나요?</span>
-				<span class="change-line">이제 Aigen이 그 문제를 해결합니다.</span>
+				Aigen Tagger는 상품 이미지, 설명 등 상품에 대한 모든 정보를 AI로 분석하여 훨씬 더 정확한 태그를 자동으로 생성합니다.<br>생성된 태그는 검색 정확도를 높여주고, 개인화 추천을 고도화할 수 있습니다.
 				</H3>
 
 				<div class="feature-grid">
 				  <div class="feature-block">
 					<img src="images/icons.png" />
-					<h3>잘못된 태그 자동 감지</h3>
+					<h3>버티컬과 상관 없는 태깅</h3>
 					<p>
-						AI가 의미 없는, 중복된,
-						<span class="change-line">잘못된 태그를 감지해</span><br>
-						<span class="change-line"> 자동으로 제거합니다.</span>
+						패션, 뷰티, 잡화 등
+						<span class="change-line">상품 정보만 있으면</span><br>
+						<span class="change-line"> 자동으로 태그 생성</span>
 					</p>
 				  </div>
 				  <div class="feature-block">
 					<img src="images/icons2.png" />
-					<h3>유사 태그 정규화</h3>
-					<p>‘청바지’, ‘데님’을 하나의 의미로<br>
-						<span class="change-line">통일하여 검색의 정확도를 </span>
-						<span class="change-line">높입니다.</span>
+					<h3>다량을 한 번에 빠르게 태깅</h3>
+					<p>상품 수의 제한 없이<br>
+						<span class="change-line">다량을 한 번에, </span>
+						<span class="change-line">상품 1개 당 1초 이내에</span>
 					</p>
 				  </div>
 				  <div class="feature-block">
 					<img src="images/icons3.png" />
-					<h3>검색 전환율 향상</h3>
+					<h3>구매 전환율 향상</h3>
 					<p>고객이 원하는 상품을 빠르게<br>
 						<span class="change-line">찾고, 전환율이 올라갑니다.</span>
 					</p>
 				  </div>
 				</div>
+		</section>
+
+
+		<!-- 솔루션 페이지 2-->
+		<section class="solution-section">
+			<h1>원하는 속성을 직접 설정하여 맞춤 태그 생성</h1>
+			<h3>사이즈, 색상, 재질 등 원하는 모든 속성을 직접 설정할 수 있습니다.</h3>
+			<br>
+			<img src="images/config.png" alt="환경설정 이미지" style="max-width: 85%; height: auto; display: block; margin: 0 auto;"/>
+		</section>
+
+		<!-- 데모 설명 페이지 -->
+		<section class="demo-section" id="demo">
+			<h1>AI 태그 생성 데모</h1>
+			<h3>정확하고, 빠르게 태깅하는 과정을 확인해보세요.</h3>
+			<video controls autoplay muted loop class="demo-video">
+				<source src="images/Aigen_Demo_Video.mp4" type="video/mp4">
+			</video>
+
 		</section>
 
 		<!-- 콜투액션 페이지 -->
@@ -132,7 +115,7 @@
 					지금, 당신의 시스템에 <span class="change-line">직접 적용해보세요.</span>
 				</h2>
 				<!-- <p>📞 1:1 미팅 신청</p> -->
-				<p>지금이 기회입니다.<br>2개 기업에 한해 <strong>무료 도입</strong>, 이후부터 소정의 계약금 발생,<br>효과가 없다면 <strong>전액 환불 보장</strong></p>
+				<p>지금이 기회입니다.<br>효과가 없다면 <strong>전액 환불 보장</strong></p>
 				<form method="post" action="https://formspree.io/f/xoveyqaa" class="cta-form">
 			  		<div class="form-row">
 						<input type="text" name="name" placeholder="이름 *" required />
@@ -169,8 +152,8 @@
 
 		  <!-- 메뉴 -->
 		  <div class="footer-center">
-			<a href="#demo">Demo</a>
 			<a href="#solution">Solution</a>
+		  	<a href="#demo">Demo</a>
 			<a href="#contact">Contact</a>
 		  </div>
 
