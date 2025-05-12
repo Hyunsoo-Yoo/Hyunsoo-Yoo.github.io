@@ -677,6 +677,22 @@ body, input, select, textarea {
   }
 }
 
+.demo-section {
+  height: 100vh;
+  align-items: flex-start;  /* 수직 상단 */
+  justify-content: center;  /* 수평 중앙 */
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  /* margin-bottom: 5rem; */
+}
+
+.demo-video {
+  max-width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
 a {
   -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
   -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
