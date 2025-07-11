@@ -162,6 +162,9 @@
 
 @media (max-width: 768px) {
 
+    .solution h2{
+        font-size:1.6rem;
+    }
 
     /* 1) 아코디언 컨테이너 : 화면 폭에 맞추기 */
   .solution-accordion{
@@ -180,12 +183,12 @@
   /* 3) 토글 버튼 텍스트 크기 조금 줄이기 */
   .solution-accordion-header{
     padding: 1rem;
-    font-size: 1.05em;
+    font-size: 0.9em;
   }
 
   /* 4) 본문 단락 간격 & 글자 크기 */
   .solution-accordion-content p{
-    font-size: .95em;
+    font-size: .8em;
     line-height: 1.4;
     padding: 0 1rem 1rem;
   }
@@ -200,6 +203,13 @@
 }
 
 @media (max-width: 768px) {
+    .bottom-cta h2{
+        font-size:1.6rem;
+    }
+
+    .bottom-cta p{
+        font-size:0.8rem;
+    }
     .signup-form{
         width: 300px;
     }
