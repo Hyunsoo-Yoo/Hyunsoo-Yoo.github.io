@@ -1,12 +1,15 @@
 /* 섹션을 슬라이드 캔버스로 */
 #ai-problem {
   display:flex;
-  align-items: flex-start;
+
   flex-direction: column;   /* 세로축 정렬용 */
   justify-content: flex-start;/* 세로축: 위쪽 */
-  padding: 5vh 0 0;         /* 맨 위에서 살짝만 띄우기 */
-  color: #000000;            /* 필요하면 글자색 조정 */
-  background: #f5fdfd;
+  padding: 4vh 0 0;         /* 맨 위에서 살짝만 띄우기 */
+  color: #ffffff;            /* 필요하면 글자색 조정 */
+  /*background: #f5fdfd;*/
+  background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("../images/background2.png") center/cover no-repeat;
 }
 
 
@@ -17,12 +20,12 @@
 }
 
 #ai-problem .ai-inner h2{
-  color:#000000;
+  color: #ffffff;
   text-align:left;
 }
 
 #ai-problem .ai-inner p{
-  color:#000000;
+  color: #ffffff;
   text-align:left;
 }
 
