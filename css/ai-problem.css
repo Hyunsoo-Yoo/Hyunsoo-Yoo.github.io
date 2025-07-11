@@ -1,0 +1,49 @@
+/* 섹션을 슬라이드 캔버스로 */
+#ai-problem {
+  display:flex;
+  align-items: flex-start;
+  flex-direction: column;   /* 세로축 정렬용 */
+  justify-content: flex-start;/* 세로축: 위쪽 */
+  padding: 5vh 0 0;         /* 맨 위에서 살짝만 띄우기 */
+  color: #000000;            /* 필요하면 글자색 조정 */
+  background: #f5fdfd;
+}
+
+
+#ai-problem .ai-inner {
+  position: relative;          /* 배경 위로 */
+  z-index: 2;
+  padding: 6vh 5vw 4vh;        /* 상·좌우 패딩은 여유, 하단은 이미지 간격 */
+}
+
+#ai-problem .ai-inner h2{
+  color:#000000;
+  text-align:left;
+}
+
+#ai-problem .ai-inner p{
+  color:#000000;
+  text-align:left;
+}
+
+/* ② 이미지 3장을 한 줄에 */
+#ai-problem .ai-img-row {
+  display: flex;               /* flex 한 줄 */
+  gap: 1rem;                   /* 이미지 사이 간격 */
+  margin-top: 8vh;          /* 텍스트와 거리 */
+}
+
+#ai-problem .ai-img-row img {
+  border-radius: 8px;
+  flex: 1 1 0;                 /* 동일 폭으로 3장 분배 */
+  min-width: 0;
+  height: 300px;               /* 원하는 높이 */
+  object-fit: cover;           /* 가득 채우되 비율 유지 */
+  box-shadow:
+    0 0 0 1px rgba(0,0,0,0.25),   /* 테두리처럼 보이는 외곽선 */
+    0 4px 10px rgba(0,0,0,0.15);  /* 아래로 살짝 드롭 섀도 */
+}
+
+#ai-problem .ai-img-row img:hover {
+  transform: translateY(-8px);
+}

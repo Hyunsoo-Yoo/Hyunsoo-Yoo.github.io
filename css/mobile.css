@@ -1,0 +1,238 @@
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-content p {
+        font-size: 0.8em;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .problem {
+        padding: 3rem 0;
+    }
+
+    .problem h2 {
+        font-size: 1.8em;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+
+    .problem p {
+        font-size: 0.8em;
+        line-height:1.5;
+    }
+
+    .problem-items {
+        display: flex !important; /* 플렉스 박스로 설정 */
+        flex-direction: row !important; /* 가로 정렬 */
+        flex-wrap: nowrap !important; /* 중요: 줄바꿈 방지! */
+
+        -webkit-overflow-scrolling: touch !important; /* iOS 스크롤 부드럽게 */
+        scroll-snap-type: x mandatory !important; /* 가로축 스냅 필수 */
+        overflow-x: scroll;
+        overflow-y: hidden;
+        /* 스크롤 가능한 영역의 시작과 끝에 여백을 추가하여,
+           각 아이템이 중앙에 스냅될 때 양쪽에 빈 공간이 보이도록 합니다. */
+        padding-left: 12.5vw !important; /* 왼쪽 뷰포트 너비의 12.5% 여백 */
+        padding-right: 12.5vw !important; /* 오른쪽 뷰포트 너비의 12.5% 여백 */
+        margin: 0 !important; /* 외부 마진 제거 */
+        width: 100% !important; /* 컨테이너 너비 100% */
+        box-sizing: border-box !important; /* 패딩이 너비에 포함되도록 */
+        /* gap을 직접 사용하지 않고, 아이템 마진으로 간격을 조절합니다. */
+    }
+
+    .problem-item {
+        flex: none !important; /* 중요: 아이템이 줄어들거나 늘어나지 않도록 고정 */
+        width: 75vw !important; /* 각 아이템의 너비를 뷰포트 너비의 75%로 설정 */
+        min-width: 75vw !important; /* 최소 너비도 동일하게 설정 */
+        max-width: 75vw !important; /* 최대 너비도 동일하게 설정 */
+        scroll-snap-align: center !important; /* 스크롤 시 아이템이 중앙에 스냅되도록 설정 */
+
+        padding: 1.5rem !important; /* 내부 패딩 유지 */
+
+        /* 아이템 간 간격: 마지막 아이템을 제외하고 오른쪽에 마진을 줍니다. */
+        margin-right: 1rem !important;
+    }
+
+    /* 마지막 problem-item에는 오른쪽 마진이 필요 없습니다. */
+    .problem-item:last-child {
+        margin-right: 0 !important;
+    }
+
+    /* 스크롤바 숨기기 (선택사항) */
+    .problem-items::-webkit-scrollbar {
+        display: none;
+    }
+
+    .problem-items {
+        -ms-overflow-style: none; /* IE 및 Edge 스크롤바 숨김 */
+        scrollbar-width: none; /* Firefox 스크롤바 숨김 */
+    }
+
+    .problem-photo {
+        width: 350px !important;
+
+        margin-bottom: 1rem !important;
+    }
+
+    .problem-item h3 {
+        font-size: 1.1em !important;
+        line-height: 1.3 !important;
+        word-break: keep-all;
+    }
+
+    /* 스크롤바 숨기기 (선택사항) */
+    .problem-items::-webkit-scrollbar {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+  #ai-problem .ai-inner{
+    width: 100%;                 /* ← 컨테이너가 화면 너비만큼 */
+    padding: 4vh 4vw 2vh;        /* 좌우 여백만 살짝 유지 */
+    box-sizing: border-box;      /* 패딩 포함 계산 */
+  }
+
+  /* h2, p : 중앙 정렬 + 가변 글자 크기 */
+  #ai-problem .ai-inner h2,
+  #ai-problem .ai-inner p{
+    text-align: center;          /* 왼쪽 X → 중앙 */
+  }
+
+  /* 화면 폭에 비례해 커졌다 작아지는 글자 크기 예시 */
+  #ai-problem .ai-inner h2{
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+  }
+  #ai-problem .ai-inner p{
+    font-size: clamp(0.9rem, 4vw, 1.05rem);
+    line-height: 1.45;
+  }
+
+  /* ── 이미지 캐러셀 ───────────────────────────── */
+  #ai-problem .ai-img-row{
+    display: flex !important; /* 플렉스 박스로 설정 */
+    flex-direction: row !important; /* 가로 정렬 */
+    flex-wrap: nowrap !important; /* 중요: 줄바꿈 방지! */
+
+    -webkit-overflow-scrolling: touch !important; /* iOS 스크롤 부드럽게 */
+    scroll-snap-type: x mandatory !important; /* 가로축 스냅 필수 */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* 스크롤 가능한 영역의 시작과 끝에 여백을 추가하여,
+       각 아이템이 중앙에 스냅될 때 양쪽에 빈 공간이 보이도록 합니다. */
+    padding-left: 12.5vw !important; /* 왼쪽 뷰포트 너비의 12.5% 여백 */
+    padding-right: 12.5vw !important; /* 오른쪽 뷰포트 너비의 12.5% 여백 */
+    margin: 0 !important; /* 외부 마진 제거 */
+    width: 100% !important; /* 컨테이너 너비 100% */
+    box-sizing: border-box !important; /* 패딩이 너비에 포함되도록 */
+    /* gap을 직접 사용하지 않고, 아이템 마진으로 간격을 조절합니다. */
+  }
+
+  #ai-problem .ai-img-row img{
+    flex: none !important; /* 중요: 아이템이 줄어들거나 늘어나지 않도록 고정 */
+    width: 75vw !important; /* 각 아이템의 너비를 뷰포트 너비의 75%로 설정 */
+    min-width: 75vw !important; /* 최소 너비도 동일하게 설정 */
+    max-width: 75vw !important; /* 최대 너비도 동일하게 설정 */
+    scroll-snap-align: center !important; /* 스크롤 시 아이템이 중앙에 스냅되도록 설정 */
+
+    padding: 1.5rem !important; /* 내부 패딩 유지 */
+
+    /* 아이템 간 간격: 마지막 아이템을 제외하고 오른쪽에 마진을 줍니다. */
+    margin-right: 1rem !important;
+  }
+
+  /* 스크롤바 숨기기(선택) */
+  #ai-problem .ai-img-row::-webkit-scrollbar{ display:none; }
+}
+
+
+@media (max-width: 768px) {
+
+
+    /* 1) 아코디언 컨테이너 : 화면 폭에 맞추기 */
+  .solution-accordion{
+    min-width: 0;          /* 고정 폭 해제 */
+    width: 100%;
+    padding: 0 1rem;       /* 좌·우 살짝 여백 */
+    box-sizing: border-box;
+  }
+
+  /* 2) 항목 상자 : 좌우 여백에 맞춰 가변 */
+  .solution-accordion-item{
+    border-radius: 6px;
+    margin-bottom: 0.75rem;
+  }
+
+  /* 3) 토글 버튼 텍스트 크기 조금 줄이기 */
+  .solution-accordion-header{
+    padding: 1rem;
+    font-size: 1.05em;
+  }
+
+  /* 4) 본문 단락 간격 & 글자 크기 */
+  .solution-accordion-content p{
+    font-size: .95em;
+    line-height: 1.4;
+    padding: 0 1rem 1rem;
+  }
+
+  /* 5) 사진이 넘치지 않도록 반응형 */
+  .solution-photo{
+    width: 100%;
+    height: auto;
+    margin: 0.5rem 0 1rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+    .signup-form{
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* 1) 아코디언 컨테이너 : 화면 폭에 맞추기 */
+  .faq-accordion{
+    width: 300px;
+    padding: 0 1rem;       /* 좌·우 살짝 여백 */
+    box-sizing: border-box;
+  }
+
+  /* 2) 항목 상자 : 좌우 여백에 맞춰 가변 */
+  .faq-accordion-item{
+    border-radius: 6px;
+    margin-bottom: 0.75rem;
+  }
+
+  /* 3) 토글 버튼 텍스트 크기 조금 줄이기 */
+  .faq-accordion-header{
+    padding: 1rem;
+    font-size: 0.9em;
+  }
+
+  /* 4) 본문 단락 간격 & 글자 크기 */
+  .faq-accordion-content p{
+    font-size: 0.8em;
+    line-height: 1.4;
+    padding: 0 1rem 1rem;
+  }
+
+  .faq h2{
+      font-size:1.8em;
+  }
+
+}
+
+@media (max-width: 768px) {
+    .footer-content a, .footer-content p{
+        font-size: 0.5em;
+    }
+}

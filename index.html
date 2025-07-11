@@ -1,25 +1,24 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1:1 AI 화상 수학 튜터 과외 플랫폼</title>
+    <meta property="og:title" content="1:1 AI 화상 수학 튜터 과외 플랫폼">
+    <meta property="og:description" content="실시간 AI 튜터와의 수학 화상 과외. 저희는 답이 아닌, 풀이 전략을 코칭합니다.">
+    <meta property="og:image" content="https://www.aigen.ai.kr/images/background.png">
+    <meta property="og:url" content="https://www.aigen.ai.kr">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow" />
 
-<html>
-	<head>
-		<title>Aigen - 태그 데이터 혁신 솔루션</title>
-		<meta name="description" content="이커머스 제품 태그를 AI로 자동으로 정확하게 생성하여 전환율을 높이세요.">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+    <meta name="naver-site-verification" content="1fcc79cdf1880029b361346596ef50de9bc09763" />
 
-		<!-- 🔽 썸네일 설정 (Open Graph 태그) -->
-		<meta property="og:title" content="Aigen - 태그 데이터 혁신 솔루션">
-		<meta property="og:description" content="AI로 태그를 생성해 전환율을 높이세요.">
-		<meta property="og:image" content="https://www.aigen.ai.kr/images/Aigen_logo.png">
-		<meta property="og:url" content="https://www.aigen.ai.kr">
-		<meta property="og:type" content="website">
-		<meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
 
-		<meta name="naver-site-verification" content="1fcc79cdf1880029b361346596ef50de9bc09763" />
-	</head>
-
-	<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TXNDSGH8FE"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -29,150 +28,169 @@
 	  gtag('config', 'G-TXNDSGH8FE');
 	</script>
 
-	<body>
-		<header class="navbar">
-  			<div class="navbar-group">
-    			<a href="#home" class="logo">Aigen</a>
-				<nav class="navbar-right">
-					<a href="#solution">Solution</a>
-					<a href="#demo">Demo</a>
-					<a href="#contact">Contact</a>
-					<a href="#info">Info</a>
-				</nav>
-			</div>
-		</header>
+<body>
+    <div class="scroll-container">
+        <header class="hero" data-section="hero" id="home">
+            <div class="hero-content">
+                <h1 class="slide-up-element">실시간 AI 튜터와의 수학 화상 과외</h1><br>
+                <p class="slide-up-element">수학은, 직관을 키워야합니다.</p>
+                <p class="slide-up-element">저희는 답이 아닌, 풀이 전략을 코칭합니다.</p>
+                <br><br>
+                <a href="#signup" class="cta-button slide-up-element">무료 사전 등록하기</a>
+                <br><br>
+                <p class="disclaimer slide-up-element">* 사전 등록한 분께는 정식 출시 후 1개월 무료 체험 기회 제공</p>
+            </div>
+        </header>
 
-		<!-- 첫번째 페이지 -->
-		<section class="section" id="home">
-			<div class = "inner">
-					<h1>상품 태깅을 AI로 정확하고, 빠르게</h1>
-					<h3>
-						개인화 상품 추천 성능은,
-						<span class="change-line">정확한 태그에서부터 시작합니다.</span>
-					</h3>
-					<br>
-				<input type="button" value="데모 받기" onclick="location.href='#contact';"/>
+        <section class="problem" data-section="problem-1">
+            <h2 class="slide-up-element">이런 어려움을 겪고 있나요?</h2>
+            <div class="problem-items slide-up-element">
+                <div class="problem-item">
+                    <img src="images/problem1.png" class="problem-photo">
+                    <h3>"문제에 어떻게 접근해야 할지<br>감이 안 와요."</h3>
+                </div>
+                <div class="problem-item">
+                    <img src="images/problem2.png" class="problem-photo">
+                    <h3>"해설지를 봐도 그 문제를<br>제 걸로 만들기 어려워요."</h3>
+                </div>
+                <div class="problem-item">
+                    <img src="images/problem3.png" class="problem-photo">
+                    <h3>"학원에 가도, 과외를 받아도<br>정말 저를 잘 아는 선생님이 없어요."</h3>
+                </div>
+            </div>
+        </section>
 
-			</div>
-		</section>
+        <section class="problem" data-section="information">
+            <h2 class="slide-up-element">학생의 수준과 실력에 맞는 초개인화 교육이 필요합니다.</h2>
+            <p class="slide-up-element">학원에 가도, 과외를 맡겨도, 학생을 정확히 진단하지 못합니다.</p>
+        </section>
 
-		<!-- 솔루션 페이지 1-->
-		<section class="solution-section" id="solution">
-				<h1>Aigen Tagger</h1>
-				<H3>
-					Aigen Tagger는 상품 이미지, 설명 등 <span class="change-line">상품에 대한 모든 정보를 AI로 분석하여</span><span class="change-line"> 훨씬 더 정확한 태그를 자동으로 생성합니다.</span><br>
-					생성된 태그는 검색 정확도를 높여주고, <span class="change-line">개인화 추천을 고도화할 수 있습니다.</span>
-				</H3>
+        <section class="problem" data-section="aieducation" id="ai-problem">
+            <div class="ai-inner">
+                <h2 class="slide-up-element">AI 시대. 이젠 교육의 방식도 바꿔야 합니다.</h2>
+                <p class="slide-up-element">하버드 대학교의 연구에 따르면, AI 튜터를 사용한 학생은 일반 수업에 비해 더 짧은 시간, 더 높은 성적을 기록했습니다.</p>
+                <p class="slide-up-element">또한 학생에게 개인화된 즉각적인 피드백과, 문제의 단계별 접근 덕분에 몰입도·동기부여까지 앞섰죠.</p>
+                <p class="slide-up-element">AI 튜터가 필요한 이유, 숫자로 증명됩니다.</p>
+                <div class="ai-img-row">
+                    <img src="images/001.png" class="slide-up-element">
+                    <img src="images/002.png" class="slide-up-element">
+                    <img src="images/003.png" class="slide-up-element">
+                </div>
+            </div>
+        </section>
 
-				<div class="feature-grid">
-				  <div class="feature-block">
-					<img src="images/icons.png" />
-					<h3>모든 버티컬 적용 가능</h3>
-					<p>
-						패션, 뷰티, 잡화 등
-						<span class="change-line">상품 정보만 있으면</span><br>
-						<span class="change-line"> 자동으로 태그 생성</span>
-					</p>
-				  </div>
-				  <div class="feature-block">
-					<img src="images/icons2.png" />
-					<h3>한 번에 빠르게 태깅</h3>
-					<p>상품 수의 제한 없이<br>
-						<span class="change-line">다량을 한 번에, </span>
-						<span class="change-line">상품 1개 당 1초 이내에</span>
-					</p>
-				  </div>
-				  <div class="feature-block">
-					<img src="images/icons3.png" />
-					<h3>구매 전환율 향상</h3>
-					<p>고객이 원하는 상품을 빠르게<br>
-						<span class="change-line">찾고, 전환율이 올라갑니다.</span>
-					</p>
-				  </div>
-				</div>
-		</section>
+        <link rel="stylesheet" href="css/ai-problem.css" />
 
+        <section class="solution" data-section="solution">
+            <h2 class="slide-up-element">1:1 AI 화상 과외를 통해 최상위권에 도전합시다.</h2>
+            <div class="solution-accordion slide-up-element">
+                <div class="solution-accordion-item">
+                    <button class="solution-accordion-header">1. 문제를 찍거나 붙이세요.</button>
+                    <div class="solution-accordion-content">
+                        <p>카메라로 문제를 찍거나, 텍스트로 붙여넣기 모두 가능합니다.</p>
+                        <img src="images/solution1.png" class="solution-photo">
+                    </div>
+                </div>
+                <div class="solution-accordion-item">
+                    <button class="solution-accordion-header">2. 해설 대신 질문으로 이끕니다.</button>
+                    <div class="solution-accordion-content">
+                        <p>실시간 소통을 통해 학생의 사고 방식을 분석합니다.</p>
+                        <p>단계별 대화형 힌트를 통해 학생 스스로 풀이를 유도합니다.</p>
+                        <p>학생의 이해도에 따라 추가 설명 및 예시를 제공합니다.</p>
+                        <img src="images/solution2.png" class="solution-photo">
+                    </div>
+                </div>
+                <div class="solution-accordion-item">
+                    <button class="solution-accordion-header">3. 손글씨처럼 그려지는 화이트보드</button>
+                    <div class="solution-accordion-content">
+                        <p>생생한 라이브 판서를 제공합니다. 이를 통해 학생의 이해도를 높입니다.</p>
+                        <p>수업이 끝나면, 판서 내용을 PDF 파일로 다운로드 하세요.</p>
+                        <img src="images/solution3.png" class="solution-photo">
+                    </div>
+                </div>
+                <div class="solution-accordion-item">
+                    <button class="solution-accordion-header">4. 바로 풀어보는 유사 문제</button>
+                    <div class="solution-accordion-content">
+                        <p>AI가 생성한 유사 문제를 학생이 직접 풀어봅니다.</p>
+                        <p>학생이 직접 튜터에게 풀이 과정을 설명해보고, 튜터의 피드백을 통해 완벽히 문제를 이해합니다.</p>
+                        <img src="images/solution4.png" class="solution-photo">
+                    </div>
+                </div>
+                <div class="solution-accordion-item">
+                    <button class="solution-accordion-header">5. 데이터로 볼 수 있는 학생의 성장</button>
+                    <div class="solution-accordion-content">
+                        <p>학생이 부족한 부분, 집중도를 한 번에 분석합니다.</p>
+                        <p>세션별 리포트를 학생, 부모님께 발송해드립니다.</p>
+                        <img src="images/solution5.png" class="solution-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<!-- 솔루션 페이지 2-->
-		<section class="solution-section">
-			<h1>원하는 속성을 직접 설정<span class="change-line">하여 맞춤 태그 생성</span></h1>
-			<h3>사이즈, 색상, 재질 등 원하는 모든 속성을 <span class="change-line">직접 설정할 수 있습니다.</span></h3>
-			<br>
-			<img src="images/config.png" alt="환경설정 이미지" class="responsive-img"/>
-		</section>
+        <section id="signup" class="bottom-cta" data-section="signup">
+            <h2 class="slide-up-element">사전 등록하고, 특별한 혜택을 누리세요!</h2>
+            <p class="slide-up-element">사전 등록한 분께는 정식 출시 후 1개월 무료 체험 기회를 드립니다.</p>
+            <form class="signup-form slide-up-element" action="https://formspree.io/f/myzjrneb" method="post">
+                <input type="text" name="name" placeholder="이름" required>
+                <input type="tel" name="tel" placeholder="전화번호" required>
+                <input type="email" name="email" placeholder="이메일" required>
+                <select name="grade" required>
+                    <option value="" disabled selected>학년</option>
+                    <option value="middle1">중1</option>
+                    <option value="middle2">중2</option>
+                    <option value="middle3">중3</option>
+                    <option value="high1">고1</option>
+                    <option value="high2">고2</option>
+                    <option value="high3">고3</option>
+                </select>
+                <button type="submit" class="cta-button">무료 사전 등록하기</button>
+            </form>
+        </section>
 
-		<!-- 데모 설명 페이지 -->
-		<section class="demo-section" id="demo">
-			<h1>AI 태그 생성 데모</h1>
-			<h3>정확하고, 빠르게 태깅하는 과정을 <span class="change-line">확인해보세요.</span></h3>
-			<video controls autoplay muted loop class="demo-video">
-				<source src="images/Aigen_Demo_Video.mp4" type="video/mp4">
-			</video>
+        <section class="faq" data-section="faq">
+            <h2 class="slide-up-element">자주 묻는 질문 (FAQ)</h2>
+            <div class="faq-accordion slide-up-element">
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-header">사용 가능 시간</button>
+                    <div class="faq-accordion-content">
+                        <p>24시간 연중무휴, 학생이 원하는 시간에 튜터와의 학습이 가능합니다.</p>
+                    </div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-header">답 공개 조건</button>
+                    <div class="faq-accordion-content">
+                        <p>저희는 정답을 직접 알려주지 않습니다. 학생과의 상호 소통을 통해 학생 스스로 답을 찾을 수 있도록 돕는 것을 목표로 합니다.</p>
+                    </div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-header">베타 기간 중 비용</button>
+                    <div class="faq-accordion-content">
+                        <p>베타 테스트 기간 동안 모든 기능은 100% 무료로 제공됩니다. 사용자 여러분의 소중한 피드백을 바탕으로 서비스를 개선해 나갈 예정입니다.</p>
+                    </div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-header">지원 과목</button>
+                    <div class="faq-accordion-content">
+                        <p>현재는 수학 과목을 중심으로 서비스를 준비 중이며, 점차 물리, 화학 등 다른 과목으로 확장해 나갈 계획입니다.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="https://open.kakao.com/o/seTIDdqh" class="cta-button kakao-button slide-up-element" target="_blank">
+                <i class="fas fa-comment"></i>카카오톡으로 문의하기
+            </a>
+            <footer class="slide-up-element">
+                <div class="footer-content">
+                    <a href="/privacy-policy.html">개인정보처리방침</a>
+                    <span>|</span>
+                    <a href="mailto:leo@aigen.ai.kr">leo@aigen.ai.kr</a>
+                    <span>|</span>
+                    <p>2025 Aigen</p>
+                </div>
+            </footer>
+        </section>
+    </div>
 
-		</section>
-
-		<!-- 콜투액션 페이지 -->
-		<section class="cta-section" id="contact">
-		  	<div class="cta-box">
-				<h2>
-					지금, 당신의 시스템에 <span class="change-line">직접 적용해보세요.</span>
-				</h2>
-				<!-- <p>📞 1:1 미팅 신청</p> -->
-				<p>지금이 기회입니다.<br>효과가 없다면 <strong>전액 환불 보장</strong></p>
-				<form method="post" action="https://formspree.io/f/xoveyqaa" class="cta-form">
-			  		<div class="form-row">
-						<input type="text" name="name" placeholder="이름 *" required />
-						<input type="email" name="email" placeholder="work email *" required />
-			  		</div>
-					<!-- 이 부분은 너무 많은 정보를 얻는 것 같아서 지움
-			  		<div class="form-row">
-						<input type="text" placeholder="전화번호 *" required />
-						<input type="text" placeholder="직책 *" required />
-			  		</div>
-			  		<div class="form-row">
-						<input type="text" placeholder="소속 *" required />
-						<input type="text" placeholder="상담 내용을 입력해주세요." />
-			  		</div>
-			  		-->
-					<button type="submit">Submit</button>
-				</form>
-				<!-- 오픈카카오톡 버튼 -->
-				<div class="form-row">
-					<a href="https://open.kakao.com/o/seTIDdqh" target="_blank" class="kakao-btn">
-						👉 카카오톡으로 문의하기
-					</a>
-				</div>
-		  	</div>
-		</section>
-
-		<!-- Information 페이지 -->
-		<footer class="footer" id="info">
-		  <!-- 회사 정보 -->
-		  <div class="footer-left">
-			<h3 class="footer-logo">Aigen</h3>
-			<p>leo@aigen.ai.kr</p>
-		  </div>
-
-		  <!-- 메뉴 -->
-		  <div class="footer-center">
-			<a href="#solution">Solution</a>
-		  	<a href="#demo">Demo</a>
-			<a href="#contact">Contact</a>
-		  </div>
-
-		  <!-- SNS 링크 -->
-		  <div class="footer-right">
-			<a href="https://www.linkedin.com/in/LeohyunYoo" target="_blank" class="social-icon">
-			  <i class="fab fa-linkedin"></i>
-			</a>
-		  </div>
-		</footer>
-
-	</body>
-
-		<!-- Scripts -->
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/tag.js"></script>
-			<!-- <script type="text/javascript" src="assets/js/ui.js"></script>-->
-
+    <script src="js/script.js"></script>
+    
+</body>
 </html>
