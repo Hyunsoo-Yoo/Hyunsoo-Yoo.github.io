@@ -53,6 +53,7 @@ body {
 
 .hero-content h1 {
     font-size: 2.8em;
+    font-style: italic;
     margin-bottom: 0.5em;
     color: var(--heading-color);
     transition: color 0.3s;
@@ -158,18 +159,13 @@ body {
   object-fit:cover;
 }
 
-.problem-inline{
-  display:flex;
-  align-items:center;   /* 세로 중앙정렬 */
-  gap:24px;             /* 요소 간 간격 */
-  justify-content:center; /* 가운데 정렬 원하면 */
-  margin-top:24px;      /* h2와 간격 */
-}
 
-.problem-quote{
-  font-size:1.2rem;
-  line-height:1.4;
-  color:var(--subheading-color);
+.problem-swipe-hint {
+  display: none;
+  margin-top: 0.75rem;   /* 카드 아래와 약간 띄우기 */
+  font-size: 0.95em;
+  color: var(--subheading-color); /* 원하는 색상 */
+  text-align: center;
 }
 
 .solution {
@@ -183,6 +179,10 @@ body {
     word-break: keep-all;
 }
 .solution-photo {
+    border-radius: 4px;
+    box-shadow:
+    0 0 0 1px rgba(0,0,0,0.25),
+    0 4px 10px rgba(0,0,0,0.15);
     width: 350px;
     margin: 15px;
 }
@@ -279,8 +279,8 @@ body {
     overflow: hidden;
     background: #e9ffff;
     box-shadow:
-    0 0 0 1px rgba(0,0,0,0.25),   /* 테두리처럼 보이는 외곽선 */
-    0 4px 10px rgba(0,0,0,0.15);  /* 아래로 살짝 드롭 섀도 */
+    0 0 0 1px rgba(0,0,0,0.25),
+    0 4px 10px rgba(0,0,0,0.15);
 }
 
 .solution-accordion-header {

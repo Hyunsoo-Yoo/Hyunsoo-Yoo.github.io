@@ -92,6 +92,12 @@
 }
 
 @media (max-width: 768px) {
+  .problem-swipe-hint {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
 
   #ai-problem .ai-inner{
     width: 100%;                 /* ← 컨테이너가 화면 너비만큼 */
