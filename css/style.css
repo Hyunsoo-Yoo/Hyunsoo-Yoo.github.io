@@ -267,7 +267,9 @@ body {
     font-size: 2.24em;
     color: var(--heading-color);
     word-break: keep-all;
+    line-height:0;
 }
+
 
 .solution-accordion {
     max-width: 1920px;
